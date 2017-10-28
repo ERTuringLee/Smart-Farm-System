@@ -19,8 +19,8 @@ var app = express();
 var pool = mysql.createPool({
   host     : 'localhost',
   user     : 'root',
-  password : 'logicpaju',
-  database : 'smart'
+  password : '',
+  database : ''
 });
 var port = new SerialPort('/dev/ttyACM1', {
 	baudRate: 9600
