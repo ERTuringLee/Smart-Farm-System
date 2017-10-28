@@ -1,4 +1,5 @@
 # 2016 Senier project(Pf. Kwon Yong Jin)
+Project Name: Smart Farm System
 
 ## Clone git repo and Start 
     $ git clone https://github.com/ErwinRomelLee/graduate.git
