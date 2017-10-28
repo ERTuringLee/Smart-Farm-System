@@ -1,4 +1,4 @@
-# 2016 Senier project(Pf. Kwon Yong Jin)
+# 2016 Senior project(Pf. Kwon Yong Jin)
 Project Name: Smart Farm System
 
 ## Clone git repo and Start 
