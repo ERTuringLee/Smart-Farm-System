@@ -1,0 +1,335 @@
+ul.tabs {
+ margin: 0;
+ padding: 0;
+ height: 32px;
+ border-bottom: 1px solid #ddd;
+ border-left: 1px solid #ddd;
+ font-family: "dotum";
+ float: left;
+ list-style: none;
+ font-size: 12px;
+}
+ul.tabs2 {
+ margin: 0;
+ padding: 0;
+ height: 32px;
+ border-bottom: 1px solid #ddd;
+ border-left: 1px solid #ddd;
+ font-family: "dotum";
+ float: left;
+ list-style: none;
+ font-size: 12px;
+}
+ul.tabs3 {
+ margin: 0;
+ padding: 0;
+ height: 32px;
+ boder-bottom: 1px solid #ddd;
+ border-left: 1px solid #ddd;
+ font-family: "dotum";
+ float: left;
+ list-style: none;
+ font-size: 12px;
+}
+ul.detail_tabs1 {
+ margin:0;
+ padding: 0;
+ height: 32px;
+ font-family: "dotum";
+ border-left: 1px solid #ddd;
+ float:left;
+ list-style: none;
+ font-size: 12px;
+}
+ul.tabs li{
+ cursor: pointer;
+ float: left;
+ width: 158.5px;
+ height: 31px;
+ line-height: 31px;
+ border: 1px solid #ddd;
+ border-left: none;
+ font-weight: bold;
+ background: #dadada;
+ overflow: hidden;
+ text-align: center;
+}
+ul.tabs2 li{
+ cursor: pointer;
+ float: left;
+ width:140px;
+ height: 31px;
+ line-height: 31px;
+ border: 1px solid #ddd;
+ border-left: none;
+ font-weight: bold;
+ background: #dadada;
+ overflow: hidden;
+ text-align: center;
+}
+ul.tabs3 li{
+ cursor: pointer;
+ float: left;
+ width: 158.5px;
+ height: 31px;
+ line-height: 31px;
+ border: 1px solid #ddd;
+ border-left: none;
+ font-weight: noen;
+ background: #dadada;
+ overflow: hidden;
+ text-align: center;
+}
+ul.tabs li.active {
+ background: #FFFFFF;
+ border-bottom: 1px solid #FFFFFF;
+}
+ul.tabs2 li.active {
+ background: #FFFFFF;
+ border-bottom: 1px solid #FFFFFF;
+}
+ul.tabs3 li.active {
+ background: #FFFFFF;
+ border-bottom: 1px solid #FFFFFF;
+}
+.tab_container {
+ border: 1px solid #ddd;
+ border-top: none;
+ width: 318px;
+ background: #FFFFFF;
+}
+.tab_container2 {
+ border: 1px solid #ddd;
+ border-top: none;
+ width: 281px;
+ background: #FFFFFF;
+}
+.tab_container3 {
+ border: 1px solid #ddd;
+ border-top: none;
+ width: 318px;
+ background: #FFFFFF;
+}
+.tab_content {
+ padding: 5px;
+ font-size: 17px;
+}
+.tab_container .tab_content ul{
+ margin: 0px;
+ padding: 0px;
+}
+.tab_container .tab_content ul li {
+ padding: 5px;
+}
+#container {
+ text-align:center;
+ margin: 9.5px;
+}
+#container2 {
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+#container3 {
+ margin: 9.5px;
+}
+#container4 {
+ border:1px solid black; 
+ width:340px;
+ margin-top:5px;
+ margin-bottom: 5px;
+}
+.menu {
+ border-top:1px solid #eeeeee;
+ border-bottom: 1px solid #eeeeee;
+ text-align: center;
+}
+.menu:hover {
+ cursor: pointer;
+ background-color: #eeeeee;
+}
+svg {
+	background-color: #eeeeee;
+	fill: gray;
+}
+path {
+	fill:none;
+
+}
+svg g path.line {
+	stroke: #1db34f;
+	stroke-width: 2px;
+	stroke-opacity: 1;
+	fill: none;
+}
+svg g path.line2{
+	stroke: rgb(255,0,0);
+	stroke-width: 2px;
+	stroke-opacity: 1;
+	fill: none;
+}
+svg g path.line3{
+	stroke: rgb(255,255,0);
+	stroke-width: 2px;
+	stroke-opacity: 1;
+	fill: none;
+}
+svg g path.line4 {
+	stroke: rgb(0,0, 255);
+	stroke-width: 2px;
+	stroke-opacity: 1;
+	fill: none;
+}
+svg g path.line5 {
+	stroke: rgb(255,153,0);
+	stroke-width: 2px;
+	stroke-opacity: 1;
+	fill: none;
+}
+svg g path.line6 {
+	stroke: rgb(0,0,0);
+	stroke-width: 2px;
+	stroke-opacity: 1;
+	fill: none;
+}
+svg g path.line7 {
+	stroke: rgb(255, 0, 255);
+	stroke-width: 2px;
+	stroke-opacity: 1;
+	fill: none;
+}
+svg g circle {
+	fill: #1db34f;
+	stroke: #16873c;
+	stroke-width: 2px;
+}
+svg g circle.circle2{
+	fill: rgb(255,0, 0);
+	stroke: rgb(255, 0, 0);
+	stroke-width: 2px;
+}
+svg g circle.circle3{
+	fill: rgb(255,255,0);
+	stroke: rgb(255,255,0);
+	stroke-width: 2px;
+}
+svg g circle.circle4{
+	fill: rgb(0,0,255);
+	stroke: rgb(0,0,255);
+	stroke-width: 2px;
+}
+svg g circle.circle5{
+	fill: rgb(255,153,0);
+	stroke: rgb(255,153,0);
+	stroke-width: 2px;
+}
+svg g circle.circle6{
+	fill: rgb(0,0,0);
+	stroke: rgb(0,0,0);
+	stroke-width: 2px;
+}
+svg g circle.circle7{
+	fill: rgb(255, 0, 255);
+	stroke: rgb(255, 0, 255);
+	stroke-width: 2px;
+}
+.logoutButton {
+	background-color: rgb(218,218,218);
+	border: 3px solid rgb(178,178,178);
+	border-radius: 5px;
+	color: black;
+	padding: 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 15px;
+}
+.solbutton {
+	background-color: rgb(218, 218, 218);
+	border: 3px solid rgb(178,178,178);
+	border-radius: 5px;
+	color: black;
+	padding: 3px 3px;
+	text-align: center;
+	margin-left:20px;
+	margin-right: 10px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+}
+.ledButton {
+	background-color: rgb(218, 218, 218);
+	border: 3px solid rgb(178, 178, 178);
+	border-radius: 5px;
+	color: black;
+	padding: 3px 3px;
+	text-align: center;
+	margin-left: 10px;
+	text-decoration: none;
+	display: inline-bock;
+	font-size: 15px;
+}
+#login_button {
+	background-color: rgb(198, 198, 198);
+	border: 3px solid rgb(178, 178, 178);
+	border-radius: 5px;
+	color: black;
+	padding: 3px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+.logoutButton:hover{
+	background-color: rgba(218, 218,218, 0.3);
+	cursor: pointer;
+}
+.solbutton:hover {
+	background-color: rgba(218, 218, 218, 0.3);
+	cursor: pointer;
+}
+.ledButton:hover {
+	background-color: rgba(218, 218, 218, 0.3);
+	cursor: pointer;
+}
+#login_button:hover {
+	background-color: rgb(218, 218, 218) ;
+	cursor: pointer;
+}
+#control {
+	text-align: center;
+	border-top: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+}
+#control:hover {
+	background-color: rgb(218,218,218);
+	cursor: pointer;
+}
+#important {
+	text-align: center;
+	border-top: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+}
+#important:hover {
+	background-color: rgb(218,218,218);
+	cursor: pointer;
+}
+#data {
+	text-align: center;
+	border-top: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+}
+#data:hover {
+	background-color: rgb(218,218,218);
+	cursor: pointer;
+}
+#look_record {
+	border-top: 2px solid #bbbbbb;
+	border-bottom: 2px solid #bbbbbb;
+	line-height: 5px;
+}
+#look_record:hover {
+	background-color: rgb(218, 218, 218);
+	cursor: pointer;
+}
+
