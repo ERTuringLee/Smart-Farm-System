@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <script type="text/javascript" src="/javascripts/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.ajax-cross-origin.min.js"></script>
+    <script type="text/javascript" src="/javascripts/d3.v3.js"></script>
+    <script type="text/javascript" src="/javascripts/member.js"></script>
+    <script type="text/javascript" src="/javascripts/wind.js"></script>
+    <script type="text/javascript" src="/javascripts/thr.js"></script>
+    <script type="text/javascript" src="/javascripts/record.js"></script>
+    <script type="text/javascript" src="/javascripts/buttonControl.js"></script>
+    <script type="text/javascript" src="/javascripts/tab.js"></script>
+    <link rel="stylesheet" type="text/css" href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div id="ledTitle"><h1><%= title %></h1></div>
+    <div><input type="button" class="logoutButton" value="로그아웃(logout)"></input></div>
+    <div id="container">
+	<ul class="tabs">
+		<li class="active" rel="tab1">관수</li>
+		<li rel="tab2">LED</li>
+	</ul>
+	<div class="tab_container">
+		<div id="tab1" class="tab_content">
+			<p> 솔밸브 개페를 통한 작물 관수 제어 </p>
+			<p id="sol_status"></p>
+			<p id="sol_on_time"></p>
+			<p id="on_off_time_at"></p>
+			<p><input type="button" id="turnOnButton" value="솔밸브 개방"></input></p>
+			<p><input type="button" id="turnOffButton" value="솔밸브 폐쇄"></input></p>
+			<div id="record" style="text-align:center"></div>
+		</div>
+		<div id="tab2" class="tab_content">
+			<p> 농막의 LED 제어 </p>
+			<p><input type="button" id="onLED" value="LED 켜기"></input></p>
+			<p><input type="button" id="offLED" value="LED 끄기"></input></p>
+			<p><input type="button" id="autoLED" value="LED 자동"></input></p>
+		</div>
+	</div>
+    </div>
+    <div><h1>기상관측</h1></div>
+    <div id="container2">
+	<ul class="tabs2">
+		<li class="active" rel="weather_tab1">온도/습도/강수량</li>
+		<li rel="weather_tab2">풍향/풍속</li>
+	</ul>
+	<div class="tab_container2">
+		<div id="weather_tab1" class="tab_content2">
+			<p>&nbsp;오늘 온도<b style="color:#1db34f;">(초록)</b> /습도<b style="color:rgb(255, 0, 0)">(빨간)</b></p>
+			<div id="lineGraph1"></div>
+			<p>&nbsp;시간당 강수량</p>
+			<div id="barGraph1"></div>
+		</div>
+		<div id="weather_tab2" class="tab_content2">
+			<p>&nbsp;현재 풍향 / 풍속</p>
+			<div id="line1"></div>
+		</div>
+	</div>
+    </div>
+    <div><input type="button" class=logoutButton" value="로그아웃(logout)"></input></div>
+  </body>
+</html>
