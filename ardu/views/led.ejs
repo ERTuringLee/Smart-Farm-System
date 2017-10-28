@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smart Farm System</title>
+    <script type="text/javascript" src="javascripts/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.ajax-cross-origin.min.js"></script>
+    <script type="text/javascript" src="javascripts/d3.v3.js"></script>
+    <script type="text/javascript" src="javascripts/member.js"></script>
+    <script type="text/javascript" src="javascripts/wind.js"></script>
+    <script type="text/javascript" src="javascripts/thr.js"></script>
+    <script type="text/javascript" src="javascripts/record.js"></script>
+   
+    <script type="text/javascript" src="javascripts/buttonControl.js"></script>
+    <script type="text/javascript" src="javascripts/tab.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.0//jquery-ui.js"></script>
+    <script type="text/javascript" src="javascripts/test.js"></script>
+    <script type="text/javascript" src="javascripts/wind2.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+  </head>
+  <body>
+    <div id="ledTitle"><h1 style="font-size:25px;">스마트 팜 시스템</h1></div>
+    <div><input type="button" class="logoutButton" value="로그아웃(logout)"></input></div>
+    <div id="container4">
+	<div id="important"><h1 style="font-size:25px;">중요 데이터 미리보기</h1></div>
+	<div id="important-data">
+		<p>&nbsp;&nbsp;현재 실외온도: <span id="important_out_temp"></span></p>
+		<p>&nbsp;&nbsp;현재 관정온도: <span id="important_water_temp"></span></p>
+		<p>&nbsp;&nbsp;현재 실외습도: <span id="important_out_hum"></span></p>
+		<p>&nbsp;&nbsp;강수량: <span id="important_rain"></span></p>
+		<p>&nbsp;&nbsp;배터리 잔량: <span id="important_battery"></span></p>
+	</div>
+  	<div id="control"><h1 style="font-size:25px;">제어 (관수 / LED)</h1></div>
+	<div id="container">
+		<ul class="tabs">
+			<li class="active" rel="tab1">관수</li>
+			<li rel="tab2">LED</li>
+		</ul>
+		<div class="tab_container">
+			<div id="tab1" class="tab_content">
+				<p>  솔밸브 개폐를 통한 작물관수 제어  </p>
+				<p id="sol_status"></p>
+				<p>
+				<input type="button" id="turnOnButton" class="solbutton" value="솔밸브 개방"></input>
+				<input type="button" id="turnOffButton" class="solbutton" value="솔밸브 폐쇄"></input>
+				</p>
+				<div id="look_record"><h4>솔레노이드 밸브 기록 보기</h4></div>
+				<div id="record_data" style="text-align:center;">
+					<p id = "sol_on_time"></p>
+					<p id = "on_off_time_at"></p>
+					<div id="record" style="text-align:center;padding-left:30px;"></div>
+				</div>
+			</div>
+			<div id="tab2" class="tab_content">
+				<p>  농막의 LED제어  </p>
+				<p><input type="button" id="onLED" class="ledButton" value="LED 켜기"></input>
+				<input type="button" id="offLED" class="ledButton" value="LED 끄기"></input>
+				<input type="button" id="autoLED" class="ledButton" value="LED 자동"></input></p>
+			</div>
+		</div>
+	</div>
+	<div id="data"><h1 style="font-size:25px;">기상관측</h1></div>
+	<div id="container3">
+		<ul class="tabs3">
+			<li class="active" rel="test_tab1"><b>온도/습도/조도/강수량</b></li>
+			<li rel="test_tab2">풍향/풍속</li>
+		</ul>
+		<div class="tab_container3">
+			<div id="test_tab1" class="tab_content3">	
+				<br><br>
+				<div id="menu"></div>
+				<div id="month"></div>
+				<div id="cont"></div>
+				<div id="hla"></div>
+				<br>
+			</div>
+			<div id="test_tab2" class="tab_content3">
+				<p>&nbsp;현재 풍향/풍속&nbsp;</p>
+				<div id="line2"></div>
+			</div>
+		</div>
+	</div>
+    </div>
+     <div><input type="button" class="logoutButton" value="로그아웃(logout)"></input></div>
+  </body>
+</html>
