@@ -1,2 +1,2 @@
-# graduate
+# 2016 Senier project
 
