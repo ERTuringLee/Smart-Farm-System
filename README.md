@@ -1,4 +1,4 @@
-# 2016 Senier project
+# 2016 Senier project(Pf. Kwon Yong Jin)
 
 ## Clone git repo and Start 
     $ git clone https://github.com/ErwinRomelLee/graduate.git
